@@ -1,4 +1,4 @@
-# REVENUE FORECADTONG USING IBM AI Enterprise Workflow 
+# REVENUE FORECASTING USING IBM AI Enterprise Workflow 
 
 
 Usage notes
