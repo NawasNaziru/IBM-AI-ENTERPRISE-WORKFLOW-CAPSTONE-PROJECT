@@ -54,7 +54,7 @@ And every once and a while if you want clean up you can
     ~$ docker system prune
 
 
-Run the unittests
+To run the unittests
 -------------------
 
 Before running the unit tests launch the `app.py`.
@@ -78,14 +78,14 @@ To run all of the tests
 
     ~$ python run-tests.py
 
-Run the container to test that it is working
+To run the container to test that it is working
 ----------------------------------------------    
 
 .. code-block:: bash
 
     ~$ docker run -p 4000:8080 iris-ml
 
-Go to http://0.0.0.0:4000/ and you will see a basic website that can be customtized for a project.
+
 
 
 
