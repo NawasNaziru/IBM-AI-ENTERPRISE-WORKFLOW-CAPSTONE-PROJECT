@@ -22,7 +22,7 @@ MODEL_VERSION_NOTE = "SVM on AAVAIL churn"
 SAVED_MODEL = os.path.join("models","model-{}.joblib".format(re.sub("\.","_",str(MODEL_VERSION))))
 
 
-def load_aavail_data():
+def get_data():
     data_dir = os.path.join(".","data")
     df = pd.read_csv(os.path.join(data_dir,r"aavail-target.csv"))
        
@@ -31,7 +31,7 @@ def load_aavail_data():
     y = np.zeros(_y.size)
     y[_y==0] = 1 
     df.drop(columns=['customer_id','customer_name'],inplace=True)
-    df.head()
+
     X = df
 
     return(X,y)
